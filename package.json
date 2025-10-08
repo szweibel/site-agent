@@ -1,0 +1,31 @@
+{
+  "name": "claude-answer-engine",
+  "version": "0.1.0",
+  "description": "A generalized framework for building Claude-powered answer engines for any domain",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "rm -rf packages/*/dist examples/*/dist node_modules packages/*/node_modules examples/*/node_modules"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "agent",
+    "answer-engine",
+    "chatbot",
+    "sse"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.0"
+  }
+}

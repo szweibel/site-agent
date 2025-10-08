@@ -1,0 +1,22 @@
+{
+  "name": "starter-example",
+  "version": "0.1.0",
+  "description": "Minimal starter example for Claude Answer Engine",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "dev:server": "node --loader ts-node/esm src/server.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:server": "node dist/server.js"
+  },
+  "dependencies": {
+    "@claude-ae/core": "file:../../packages/core"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

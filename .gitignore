@@ -1,0 +1,31 @@
+# Node dependencies
+node_modules/
+
+# Build outputs
+/packages/*/dist/
+/examples/*/dist/
+
+# Logs and runtime artifacts
+logs/
+*.log
+
+# TypeScript cache
+.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+.fleet/
+.history/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Test artifacts
+coverage/
