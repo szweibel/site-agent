@@ -10,12 +10,9 @@ export type ConversationTurn = {
 
 /**
  * Tool definition using the Claude Agent SDK tool format
+ * This matches the return type from the SDK's tool() function
  */
-export type Tool = {
-  name: string;
-  description: string;
-  handler: (params: any) => Promise<any>;
-};
+export type Tool = any;
 
 /**
  * Knowledge base source
@@ -47,8 +44,8 @@ export type HistoryConfig = {
  */
 export type PluginContext = {
   prompt: string;
-  history?: ConversationTurn[];
-  metadata?: Record<string, unknown>;
+  history?: ConversationTurn[] | undefined;
+  metadata?: Record<string, unknown> | undefined;
 };
 
 /**
@@ -130,16 +127,16 @@ export type StreamOptions = {
   prompt: string;
 
   /** Conversation history */
-  history?: ConversationTurn[];
+  history?: ConversationTurn[] | undefined;
 
   /** Callback for each message */
-  onMessage?: (message: SDKMessage) => void | Promise<void>;
+  onMessage?: ((message: SDKMessage) => void | Promise<void>) | undefined;
 
   /** Abort controller for cancellation */
-  abortController?: AbortController;
+  abortController?: AbortController | undefined;
 
   /** Custom metadata for this run */
-  metadata?: Record<string, unknown>;
+  metadata?: Record<string, unknown> | undefined;
 };
 
 /**
@@ -153,13 +150,13 @@ export type AgentResult = {
   streamed: boolean;
 
   /** Cost in USD */
-  cost?: number;
+  cost?: number | undefined;
 
   /** Token usage */
   usage?: {
     inputTokens: number;
     outputTokens: number;
-  };
+  } | undefined;
 };
 
 /**
