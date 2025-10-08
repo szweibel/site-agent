@@ -1,4 +1,4 @@
-# Contributing to Claude Answer Engine
+# Contributing to Site Agent
 
 Thank you for your interest in contributing!
 
@@ -7,7 +7,7 @@ Thank you for your interest in contributing!
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd claude-answer-engine
+cd site-agent
 
 # Install dependencies
 npm install
@@ -19,7 +19,7 @@ npm run build
 ## Project Structure
 
 ```
-claude-answer-engine/
+site-agent/
 ├── packages/
 │   ├── core/          # Core framework (AgentEngine, AgentServer)
 │   ├── ui/            # Reusable UI components (future)

@@ -1,4 +1,4 @@
-import { createPlugin, tool } from '@claude-ae/core';
+import { createPlugin, tool } from '@site-agent/core';
 import { z } from 'zod';
 
 /**
@@ -83,7 +83,7 @@ Today's date: ${new Date().toLocaleDateString('en-US', {
   // Optional: Post-process responses
   afterResponse: async (response) => {
     // Example: Add footer to all responses
-    return response + '\n\n---\n*Powered by Claude Answer Engine*';
+    return response + '\n\n---\n*Powered by Site Agent*';
   },
 
   // Optional: Check if query should be escalated

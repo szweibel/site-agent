@@ -1,7 +1,7 @@
 /**
- * Claude Answer Engine - Core Framework
+ * Site Agent - Core Framework
  *
- * A generalized framework for building Claude-powered answer engines
+ * Turn any website or domain into a Claude-powered Q&A agent
  */
 
 // Main classes

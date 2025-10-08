@@ -1,7 +1,7 @@
 {
-  "name": "claude-answer-engine",
+  "name": "site-agent",
   "version": "0.1.0",
-  "description": "A generalized framework for building Claude-powered answer engines for any domain",
+  "description": "Turn any website or domain into a Claude-powered Q&A agent",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -17,7 +17,9 @@
     "claude",
     "ai",
     "agent",
-    "answer-engine",
+    "website",
+    "site-agent",
+    "qa",
     "chatbot",
     "sse"
   ],

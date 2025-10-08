@@ -1,4 +1,4 @@
-import { AgentEngine, AgentServer } from '@claude-ae/core';
+import { AgentEngine, AgentServer } from '@site-agent/core';
 import { plugin } from './plugin.js';
 
 const agent = new AgentEngine(plugin);

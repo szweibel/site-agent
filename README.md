@@ -1,10 +1,10 @@
-# Claude Answer Engine
+# Site Agent
 
-A generalized framework for building Claude-powered answer engines for any domain.
+Turn any website or domain into a Claude-powered Q&A agent.
 
 ## What is this?
 
-This framework extracts the proven patterns from a production library reference agent into reusable components. Build domain-specific AI agents with:
+This framework extracts the proven patterns from a production library reference agent into reusable components. Transform your website content into an intelligent agent that answers questions with:
 
 - 🚀 **Server-Sent Events (SSE) streaming** - Real-time responses
 - 💬 **Conversation history** - Multi-turn conversations
@@ -33,7 +33,7 @@ npm run dev
 └─────────────────┬───────────────────────────┘
                   │
 ┌─────────────────▼───────────────────────────┐
-│        @claude-ae/core                      │
+│        @site-agent/core                      │
 │  - AgentEngine (streaming, history)         │
 │  - AgentServer (SSE endpoints)              │
 │  - Tool registry (MCP integration)          │
@@ -49,9 +49,9 @@ npm run dev
 
 ## Packages
 
-- **[@claude-ae/core](./packages/core)** - Core agent engine and server
-- **[@claude-ae/ui](./packages/ui)** - Reusable chat UI components
-- **[@claude-ae/cli](./packages/cli)** - Command-line interface
+- **[@site-agent/core](./packages/core)** - Core agent engine and server
+- **[@site-agent/ui](./packages/ui)** - Reusable chat UI components
+- **[@site-agent/cli](./packages/cli)** - Command-line interface
 
 ## Examples
 
@@ -64,7 +64,7 @@ npm run dev
 ### Create a Domain Plugin
 
 ```typescript
-import { createPlugin, tool } from '@claude-ae/core';
+import { createPlugin, tool } from '@site-agent/core';
 
 const myPlugin = createPlugin({
   name: 'my-domain',
@@ -101,7 +101,7 @@ export default myPlugin;
 ### Start the Agent Server
 
 ```typescript
-import { AgentEngine, AgentServer } from '@claude-ae/core';
+import { AgentEngine, AgentServer } from '@site-agent/core';
 import myPlugin from './plugin.js';
 
 const agent = new AgentEngine(myPlugin);
@@ -118,7 +118,7 @@ await server.start();
 ### Use the CLI
 
 ```typescript
-import { AgentEngine } from '@claude-ae/core';
+import { AgentEngine } from '@site-agent/core';
 import myPlugin from './plugin.js';
 
 const agent = new AgentEngine(myPlugin);

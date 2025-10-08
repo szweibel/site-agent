@@ -1,7 +1,7 @@
 {
-  "name": "@claude-ae/core",
+  "name": "@site-agent/core",
   "version": "0.1.0",
-  "description": "Core agent engine and server for Claude Answer Engine",
+  "description": "Core agent engine and server for Site Agent framework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -13,7 +13,9 @@
   "keywords": [
     "claude",
     "agent",
-    "answer-engine"
+    "site-agent",
+    "website",
+    "qa"
   ],
   "author": "",
   "license": "MIT",

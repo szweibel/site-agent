@@ -1,5 +1,5 @@
 import { createInterface } from 'node:readline';
-import { AgentEngine } from '@claude-ae/core';
+import { AgentEngine } from '@site-agent/core';
 import { plugin } from './plugin.js';
 
 async function readUserPrompt(): Promise<string> {

@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get up and running with Claude Answer Engine in 5 minutes.
+Get up and running with Site Agent in 5 minutes.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ export const plugin = createPlugin({
 Create a new file in `examples/starter/src/tools/`:
 
 ```typescript
-import { tool } from '@claude-ae/core';
+import { tool } from '@site-agent/core';
 import { z } from 'zod';
 
 export const myTool = tool(
@@ -164,7 +164,7 @@ The server exposes SSE endpoints at `/api/query`. You can:
 
 1. Use the UI from `reference_agent/public/` as a template
 2. Build your own with any framework (React, Vue, etc.)
-3. Wait for `@claude-ae/ui` package (coming soon)
+3. Wait for `@site-agent/ui` package (coming soon)
 
 ### Add Advanced Features
 
