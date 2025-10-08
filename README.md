@@ -4,7 +4,7 @@ Turn any website or domain into a Claude-powered Q&A agent.
 
 ## What is this?
 
-This framework extracts the proven patterns from a production library reference agent into reusable components. Transform your website content into an intelligent agent that answers questions with:
+A framework for building domain-specific AI agents powered by Claude. Transform your website content into an intelligent agent that answers questions with:
 
 - 🚀 **Server-Sent Events (SSE) streaming** - Real-time responses
 - 💬 **Conversation history** - Multi-turn conversations
@@ -62,7 +62,7 @@ npm run dev "What are your hours?"
 
 ## Examples
 
-- **[library-reference](./examples/library-reference)** - Library reference agent (original implementation)
+- **[library-reference](./examples/library-reference)** - Library reference agent example
 - **[docs-qa](./examples/docs-qa)** - Documentation Q&A assistant
 - **[starter](./examples/starter)** - Minimal template to start from
 

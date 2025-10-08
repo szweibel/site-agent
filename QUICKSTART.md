@@ -198,7 +198,7 @@ Make sure you're logged in to Claude Code. The framework uses the same authentic
 See the `examples/` directory for:
 
 - **starter** - Minimal template
-- **library-reference** - Production library agent
+- **library-reference** - Library reference agent example
 - **docs-qa** - Documentation assistant (coming soon)
 
 ## Get Help
