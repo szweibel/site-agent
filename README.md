@@ -13,12 +13,19 @@ This framework extracts the proven patterns from a production library reference 
 - 🎨 **Ready-to-use UI** - Chat interface with markdown and tool visualization
 - 🔌 **Plugin system** - Customize for your domain
 
+## Prerequisites
+
+- **Node.js 20+** and npm
+- **Claude Code authentication** - Uses the same login as Claude Code (part of your Claude.ai subscription)
+  - No separate API keys needed
+  - No additional billing beyond your Claude subscription
+
 ## Quick Start
 
 ```bash
 npm install
 cd examples/starter
-npm run dev
+npm run dev "What are your hours?"
 ```
 
 ## Architecture

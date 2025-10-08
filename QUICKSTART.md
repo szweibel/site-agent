@@ -4,9 +4,11 @@ Get up and running with Site Agent in 5 minutes.
 
 ## Prerequisites
 
-- Node.js 20+
-- npm (comes with Node)
-- Anthropic API key
+- **Node.js 20+** and npm (comes with Node)
+- **Claude Code authentication**
+  - Uses the same login as Claude Code
+  - Part of your Claude.ai subscription
+  - No separate API keys or billing required
 
 ## 1. Install Dependencies
 
@@ -15,18 +17,17 @@ Get up and running with Site Agent in 5 minutes.
 npm install
 ```
 
-## 2. Set Up Environment
+## 2. Set Up Environment (Optional)
 
-Create a `.env` file in the root (or in your example directory):
+If needed, create a `.env` file for server configuration:
 
 ```bash
-# Required
-ANTHROPIC_API_KEY=your-api-key-here
-
-# Optional
+# Optional server settings
 PORT=3000
 BASE_PATH=/
 ```
+
+No API keys needed - authentication uses your Claude Code login automatically.
 
 ## 3. Try the Starter Example
 
@@ -188,14 +189,9 @@ cd packages/core
 npm run build
 ```
 
-### API key not found
+### Authentication errors
 
-Set `ANTHROPIC_API_KEY` environment variable:
-
-```bash
-export ANTHROPIC_API_KEY=your-key-here
-# Or add to .env file
-```
+Make sure you're logged in to Claude Code. The framework uses the same authentication automatically - no API keys needed.
 
 ## Examples
 
